@@ -9,6 +9,8 @@ class Station extends Model
 {
     use HasFactory;
 
+    public $guarded = [];
+
     public function officers(){
         return $this->hasMany(Officer::class);
     }
@@ -19,4 +21,9 @@ class Station extends Model
     public function departments(){
         return $this->belongsToMany(Department::class);
     }
+
+    public function getReference(){
+        return 'NPF'.mt_rand(4000,90000);
+    }
+
 }

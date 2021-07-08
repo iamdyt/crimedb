@@ -1,89 +1,63 @@
+<aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <!-- User Profile-->
+                        <li>
+                            <!-- User Profile-->
+                            <div class="user-profile d-flex no-block dropdown mt-3">
+                                <div class="user-pic"><img src="../../assets/images/users/1.jpg" alt="users" class="rounded-circle" width="40" /></div>
+                                <div class="user-content hide-menu ml-2">
+                                    <a href="javascript:void(0)" class="" id="Userdd" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <h5 class="mb-0 user-name font-medium">Steave Jobs </h5>
+                                        <span class="op-5 user-email">varun@gmail.com</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End User Profile-->
+                        </li>
+                        <!-- User Profile-->
+                        <li class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i> <span class="hide-menu">Personal</span></li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard </span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-tune-vertical"></i><span class="hide-menu">Station </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item"><a href="{{route('station.add')}}" class="sidebar-link"><i class="mdi mdi-view-quilt"></i><span class="hide-menu"> Add Station </span></a></li>
+                                <li class="sidebar-item"><a href="{{route('station.all')}}" class="sidebar-link"><i class="mdi mdi-view-parallel"></i><span class="hide-menu"> All Station </span></a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-content-copy"></i><span class="hide-menu">Departments </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item"><a href="{{route('department.add')}}" class="sidebar-link"><i class="mdi mdi-format-align-left"></i><span class="hide-menu"> Add Department</span></a></li>
+                                <li class="sidebar-item"><a href="{{route('department.all')}}" class="sidebar-link"><i class="mdi mdi-format-align-right"></i><span class="hide-menu"> All Departments </span></a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-inbox-arrow-down"></i><span class="hide-menu">Ranks </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item"><a href="{{route('rank.create')}}" class="sidebar-link"><i class="mdi mdi-email"></i><span class="hide-menu"> Add Rank </span></a></li>
+                                <li class="sidebar-item"><a href="{{route('rank.all')}}" class="sidebar-link"><i class="mdi mdi-email-alert"></i><span class="hide-menu"> All Ranks </span></a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-bookmark-plus-outline"></i><span class="hide-menu">Officers </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item"><a href="{{route('officer.create')}}" class="sidebar-link"><i class="mdi mdi-book-multiple"></i><span class="hide-menu"> Enrol Officer </span></a></li>
+                                <li class="sidebar-item"><a href="{{route('officer.all')}}" class="sidebar-link"><i class="mdi mdi-book-plus"></i><span class="hide-menu"> All Officers </span></a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-gradient"></i><span class="hide-menu">Cases </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item"><a href="app-chats.html" class="sidebar-link"><i class="mdi mdi-comment-processing-outline"></i><span class="hide-menu"> New Cases</span></a></li>
+                                <li class="sidebar-item"><a href="app-calendar.html" class="sidebar-link"><i class="mdi mdi-calendar"></i><span class="hide-menu"> All Cases </span></a></li>
+                            </ul>
+                        </li>
 
-        <!--**********************************
-            Sidebar start
-        ***********************************-->
-        <div class="deznav">
-            <div class="deznav-scroll">
-				<ul class="metismenu" id="menu">
-                    <li><a href="javascript:void()">
-							<i class="flaticon-381-networking"></i>
-							<span class="nav-text">Dashboard</span>
-						</a>
-                    </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-television"></i>
-							<span class="nav-text">Stations</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="./app-profile.html">Add Station/Post</a></li>
-                            <li><a href="./app-calender.html">All Stations</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-controls-3"></i>
-							<span class="nav-text">Departments</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="./chart-flot.html">Add Department</a></li>
-                            <li><a href="./chart-morris.html">All Departments</a></li>
-
-                        </ul>
-                    </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-internet"></i>
-							<span class="nav-text">Ranks</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="./ui-accordion.html">New Rank</a></li>
-                            <li><a href="./ui-alert.html">All Rank</a></li>
-
-                        </ul>
-                    </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-heart"></i>
-							<span class="nav-text">Officers</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="./uc-select2.html">Enrol Officers</a></li>
-                            <li><a href="./uc-nestable.html">All Officers</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="widget-basic.html" class="ai-icon" aria-expanded="false">
-							<i class="flaticon-381-settings-2"></i>
-							<span class="nav-text">Cases</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="./uc-select2.html">New Cases</a></li>
-                            <li><a href="./uc-nestable.html">All Cases</a></li>
-                        </ul>
-					</li>
-                    <li><a href="javascript:void()" >
-							<i class="flaticon-381-notepad"></i>
-							<span class="nav-text">Complainants</span>
-						</a>
-
-                    </li>
-                    <li><a href="javascript:void()">
-							<i class="flaticon-381-network"></i>
-							<span class="nav-text">Accuseds</span>
-						</a>
-
-                    </li>
-                    <li><a  href="javascript:void()" >
-							<i class="flaticon-381-layer-1"></i>
-							<span class="nav-text">Victims</span>
-						</a>
-                    </li>
-                </ul>
-            
-				<div class="add-menu-sidebar">
-					<img src="images/icon1.png" alt=""/>
-					<p>Organize your menus through button bellow</p>
-					<a href="javascript:void(0);" class="btn btn-primary btn-block light">+ Add Menus</a>
-				</div>
-				<div class="copyright">
-					<p><strong>Eatio - Restaurant Admin Dashboard</strong> © 2020 All Rights Reserved</p>
-					
-				</div>
-			</div>
-        </div>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark"><i class="mdi mdi-widgets"></i><span class="hide-menu">Complainants</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark" ><i class="mdi mdi-credit-card-multiple"></i>Accuseds</a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark" aria-expanded="false"><i class="mdi mdi-credit-card-multiple"></i>Victims</a></li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>

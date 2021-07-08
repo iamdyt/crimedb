@@ -12,6 +12,10 @@ class State extends Model
     protected $guarded = [];
     public $timestamps = false;
 
+    public static function getAllStates(){
+        return self::all();
+    }
+    
     public function cases(){
         return $this->hasMany(CaseFile::class);
     }

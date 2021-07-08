@@ -9,6 +9,8 @@ class Officer extends Model
 {
     use HasFactory;
 
+    public $guarded = [];
+
     public function cases(){
         return $this->hasMany(CaseFile::class);
     }

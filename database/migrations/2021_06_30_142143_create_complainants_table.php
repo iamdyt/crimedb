@@ -22,6 +22,7 @@ class CreateComplainantsTable extends Migration
             $table->enum('gender', ['Male', 'Female']);
             $table->string('email');
             $table->text('address');
+            $table->string('image')->nullable();
             $table->unsignedBigInteger('state_id');
 
             $table->foreign('state_id')->references('id')->on('states');

@@ -19,6 +19,7 @@ class CreateOfficersTable extends Migration
             $table->string('last_name');
             $table->string('phone');
             $table->string('references');
+            $table->string('image')->nullable();
             $table->unsignedBigInteger('department_id');
             $table->unsignedBigInteger('rank_id');
             $table->unsignedBigInteger('station_id');
