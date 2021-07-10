@@ -25,7 +25,10 @@ class CreateVictimsTable extends Migration
             $table->string('image')->nullable();
             $table->unsignedBigInteger('state_id');
 
+            $table->unsignedBigInteger('station_id');
+
             $table->foreign('state_id')->references('id')->on('states');
+            $table->foreign('station_id')->references('id')->on('stations');
             $table->timestamps();
         });
     }

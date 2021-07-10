@@ -17,7 +17,7 @@ class CreateCaseFilesTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('case_reference');
-            $table->enum('status', ['Pending', 'Processing','In-Court','Closed','Completed']);
+            $table->enum('status', ['Pending', 'Processing','In-Court','Closed','Completed'])->default('Pending');
             $table->text('description');
             $table->unsignedBigInteger('complainant_id');
             $table->unsignedBigInteger('victim_id');

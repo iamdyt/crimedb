@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Complainant extends Model
 {
     use HasFactory;
+    public $guarded = [];
 
     public function reports(){
         return $this->hasMany(CaseFile::class);
@@ -15,5 +16,9 @@ class Complainant extends Model
 
     public function state(){
         return $this->belongsTo(State::class);
+    }
+
+    public function station(){
+        return $this->belongsTo(Station::class);
     }
 }

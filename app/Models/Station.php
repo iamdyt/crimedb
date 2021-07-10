@@ -26,4 +26,24 @@ class Station extends Model
         return 'NPF'.mt_rand(4000,90000);
     }
 
+    public function users(){
+        return $this->hasMany(User::class);
+    }
+
+    public function victims(){
+        return $this->hasMany(Victim::class);
+    }
+
+    public function complainants(){
+        return $this->hasMany(Complainant::class);
+    }
+
+    public function accuseds(){
+        return $this->hasMany(Accused::class);
+    }
+
+    public function cases(){
+        return $this->hasMany(CaseFile::class);
+    }
+
 }

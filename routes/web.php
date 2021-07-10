@@ -16,6 +16,15 @@ Route::get('/', function(){
     return view('layout.master');
 });
 
+Route::get('/dashboard','UserController@dashboard')->name('dashboard');
+
+// Auth Routes
+Route::get('register', 'UserController@registerView')->name('register.view');
+Route::post('register', 'UserController@register')->name('register.post');
+Route::get('login', 'UserController@loginView')->name('login.view');
+Route::post('login', 'UserController@login')->name('login.post');
+Route::get('logout', function(){auth()->logout(); session()->flush(); return redirect()->route('login.view');})->name('logout');
+
 Route::get('station/add', 'StationController@create')->name('station.add');
 Route::post('station/add', 'StationController@store')->name('station.store');
 Route::get('station/edit/{ref}', 'StationController@edit')->name('station.edit');
@@ -45,5 +54,15 @@ Route::get('officers/all', 'OfficerController@showAll')->name('officer.all');
 Route::get('officer/edit/{id}', 'OfficerController@edit')->name('officer.edit');
 Route::post('officer/{id}/update', 'OfficerController@update')->name('officer.update');
 Route::get('officer/delete/{id}', 'OfficerController@delete')->name('officer.delete');
+
+// Case,Complainant,Accused and Victim routes
+Route::get('complainant/add','CaseFileController@complainantView')->name('complainant.add');
+Route::post('complainant/store', 'CaseFileController@storeComplainant')->name('complainant.store');
+Route::get('victim/new', 'CaseFileController@victimView')->name('victim.add');
+Route::post('victim/store', 'CaseFileController@storeVictim')->name('victim.store');
+Route::get('accused/new', 'CaseFileController@accusedView')->name('accused.add');
+Route::post('accused/store', 'CaseFileController@storeAccused')->name('accused.store');
+Route::get('case/new', 'CaseFileController@caseView')->name('case.add');
+Route::post('case/store', 'CaseFileController@storeCase')->name('case.store');
 
 // central Admin routes
