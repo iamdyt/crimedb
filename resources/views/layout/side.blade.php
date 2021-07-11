@@ -19,8 +19,8 @@
                             <!-- End User Profile-->
                         </li>
                         <!-- User Profile-->
-                        <li class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i> <span class="hide-menu">Personal</span></li>
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard </span></a></li>
+                        <li class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i> <span class="hide-menu">Classified</span></li>
+                        <li class="sidebar-item"> <a class="sidebar-link  waves-effect waves-dark" href="{{route('dashboard')}}" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard </span></a></li>
                         @can('crud_station')
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-tune-vertical"></i><span class="hide-menu">Station </span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
@@ -56,7 +56,7 @@
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-gradient"></i><span class="hide-menu">Cases </span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item"><a href="{{route('complainant.add')}}" class="sidebar-link"><i class="mdi mdi-comment-processing-outline"></i><span class="hide-menu"> New Cases</span></a></li>
-                                <li class="sidebar-item"><a href="app-calendar.html" class="sidebar-link"><i class="mdi mdi-calendar"></i><span class="hide-menu"> All Cases </span></a></li>
+                                <li class="sidebar-item"><a href="{{route('case.clerk.all')}}" class="sidebar-link"><i class="mdi mdi-calendar"></i><span class="hide-menu"> All Cases </span></a></li>
                             </ul>
                         </li>
 

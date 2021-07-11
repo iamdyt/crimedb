@@ -74,6 +74,16 @@ class CaseFileController extends Controller
 
     public function storeCase(){
         CaseFile::create(request()->except('_token'));
-        return redirect()->route('dashboard')->withMessage('Case Opened Successfully');
+        return redirect()->route('case.clerk.all')->withMessage('Case Opened Successfully');
+    }
+
+    public function allClerkView(){
+        $cases = CaseFile::whereStationId(auth()->user()->station_id)->get();
+        return view('case.all', compact('cases'));
+    }
+
+    public function singleClerkView($ref){
+        $case = CaseFile::whereCaseReference($ref)->first();
+        return view('case.single', compact('case'));
     }
 }
