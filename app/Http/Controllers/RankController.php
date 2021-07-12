@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 class RankController extends Controller
 {
     
+    public function __construct()
+    {
+        $this->middleware('authy');
+    }
+
     public function create(){
         return view('rank.create');
     }

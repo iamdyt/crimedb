@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
-    <title>Xtreme admin Template - The Ultimate Multipurpose admin template</title>
+    <title>NPF-CrimeDB-Admin Auth Area</title>
     <link href="{{asset('template/dist/css/style.min.css')}}" rel="stylesheet">
 </head>
 

@@ -2,13 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Accused;
+use App\Models\CaseFile;
+use App\Models\Complainant;
+use App\Models\Department;
+use App\Models\Officer;
+use App\Models\Rank;
 use App\Models\Station;
+use App\Models\Victim;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Spatie\Permission\Models\Role;
 
 class UserController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('authy')->only('dashboard');
+    }
     public function registerView(){
         $roles = ['central', 'branch_admin', 'clerk'];
         $stations = Station::all();
@@ -64,6 +75,14 @@ class UserController extends Controller
     }
 
     public function dashboard(){
-        return view('dashboard');
+        $cases = CaseFile::whereStationId(auth()->user()->station_id)->get();
+        $complainants = count(Complainant::whereStationId(auth()->user()->station_id)->get());
+        $accuseds = Accused::whereStationId(auth()->user()->station_id)->get();
+        $victims = count(Victim::whereStationId(auth()->user()->station_id)->get());
+        $officers = Officer::whereStationId(auth()->user()->station_id)->get();
+        $stations = Station::all();
+        $departments = Department::all();
+        $ranks = Rank::all();
+        return view('dashboard', compact('cases','complainants','accuseds','victims','officers','stations','departments','ranks'));
     }
 }

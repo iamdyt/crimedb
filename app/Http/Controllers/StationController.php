@@ -8,6 +8,11 @@ use App\Models\Station;
 
 class StationController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('authy');
+    }
     public function create(Station $station){
         $ref = $station->getReference();
         $states = State::all();

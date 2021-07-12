@@ -11,6 +11,11 @@ use Illuminate\Http\Request;
 
 class OfficerController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('authy');
+    }
     public function create(){
         $states = State::getAllStates();
         $departments = Department::all();
@@ -32,7 +37,7 @@ class OfficerController extends Controller
     }
 
     public function showAll(){
-        $officers = Officer::all();
+        $officers = Officer::whereStationId(auth()->user()->station_id);
         return view('officer.all', compact('officers'));
     }
 

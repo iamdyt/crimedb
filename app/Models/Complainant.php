@@ -21,4 +21,5 @@ class Complainant extends Model
     public function station(){
         return $this->belongsTo(Station::class);
     }
+
 }

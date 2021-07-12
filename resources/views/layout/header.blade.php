@@ -8,7 +8,7 @@
                     <!-- ============================================================== -->
                     <a class="navbar-brand" href="{{route('dashboard')}}">
                         <span class="logo-text ">
-                            <b class="text-center">CRIMERUNNER</b> 
+                            <b class="text-center">CRIMINAL DATABASE</b> 
                         </span>
                     </a>
                     <!-- ============================================================== -->
@@ -50,7 +50,7 @@
                                         <p class=" m-b-0">{{auth()->user()->email}}</p>
                                     </div>
                                 </div>
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>
+                                <!-- <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a> -->
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{route('logout')}}"><i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
                             </div>

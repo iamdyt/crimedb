@@ -36,7 +36,7 @@
             </div>
         </div> 
         <footer class="footer text-center">
-            All Rights Reserved by Xtreme admin. Designed and Developed by <a href="https://wrappixel.com">WrapPixel</a>.
+           A Project By :
         </footer>
     </div>
     <script src="{{asset('template/assets/libs/jquery/dist/jquery.min.js')}}"></script>

@@ -13,6 +13,11 @@ use Illuminate\Http\Request;
 class CaseFileController extends Controller
 {
     
+    public function __construct()
+    {
+        $this->middleware('authy');
+    }
+
     public function complainantView(){
         $states = State::getAllStates();
         return view('complainant.create', compact('states'));

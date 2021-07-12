@@ -66,5 +66,9 @@ Route::get('case/new', 'CaseFileController@caseView')->name('case.add');
 Route::post('case/store', 'CaseFileController@storeCase')->name('case.store');
 Route::get('case/all', 'CaseFileController@allClerkView')->name('case.clerk.all');
 Route::get('case/{ref}/view', 'CaseFileController@singleClerkView')->name('case.clerk.single');
+Route::get('station/accuseds/all', 'AccusedController@accusedPerStation')->name('accused.station.all');
+Route::get('station/victims/all',  'VictimController@victimPerStation')->name('victim.station.all');
+Route::get('station/complainants/all', 'ComplainantController@complainantPerStation')->name('complainants.station.all');
+Route::get('accused/{id}/{status}', 'AccusedController@changeStatus')->name('accused.status.change');
 
 // central Admin routes

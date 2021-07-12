@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
-    <title>Xtreme admin Template - The Ultimate Multipurpose admin template</title>
+    <title>NPF-CrimeDB-Admin Auth Area</title>
     <link href="{{asset('template/dist/css/style.min.css')}}" rel="stylesheet">
 </head>
 
@@ -23,7 +23,7 @@
             </div>
         </div>
 
-        <div class="auth-wrapper d-flex no-block justify-content-center align-items-center -mt-4">
+        <div class="auth-wrapper d-flex no-block justify-content-center align-items-center" style="margin-top: -6rem;">
             <div class="auth-box">
                 <div>
                     <div class="logo">
@@ -83,9 +83,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group m-b-0 m-t-10 ">
-                                    <div class="col-sm-12 text-center ">
+                                    <!-- <div class="col-sm-12 text-center ">
                                         Already have an account? <a href="authentication-login1.html " class="text-info m-l-5 "><b>Sign In</b></a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </form>
                         </div>

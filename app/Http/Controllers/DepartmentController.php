@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class DepartmentController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('authy');
+    }
+
     public function create(){
         return view('department.create');
     }

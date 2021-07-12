@@ -48,6 +48,7 @@
                                 <li class="sidebar-item"><a href="{{route('officer.all')}}" class="sidebar-link"><i class="mdi mdi-book-plus"></i><span class="hide-menu"> All Officers </span></a></li>
                             </ul>
                         </li>   
+                        <li class="sidebar-item"> <a href="{{route('accused.station.all')}}" class="sidebar-link waves-effect waves-dark" ><i class="mdi mdi-credit-card-multiple"></i>Accuseds</a></li>
                         @endcan
 
                         
@@ -60,9 +61,9 @@
                             </ul>
                         </li>
 
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark"><i class="mdi mdi-widgets"></i><span class="hide-menu">Complainants</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark" ><i class="mdi mdi-credit-card-multiple"></i>Accuseds</a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark" aria-expanded="false"><i class="mdi mdi-credit-card-multiple"></i>Victims</a></li>
+                        <li class="sidebar-item"> <a href="{{route('complainants.station.all')}}" class="sidebar-link waves-effect waves-dark"><i class="mdi mdi-widgets"></i><span class="hide-menu">Complainants</span></a></li>
+                        <li class="sidebar-item"> <a href="{{route('accused.station.all')}}" class="sidebar-link waves-effect waves-dark" ><i class="mdi mdi-credit-card-multiple"></i>Accuseds</a></li>
+                        <li class="sidebar-item"> <a href="{{route('victim.station.all')}}" class="sidebar-link waves-effect waves-dark" aria-expanded="false"><i class="mdi mdi-credit-card-multiple"></i>Victims</a></li>
                        @endcan 
                     </ul>
                 </nav>
