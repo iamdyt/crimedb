@@ -8,11 +8,11 @@
                         <li>
                             <!-- User Profile-->
                             <div class="user-profile d-flex no-block dropdown mt-3">
-                                <div class="user-pic"><img src="{{asset('template/assets/images/users/1.png')}}" alt="users" class="rounded-circle" width="40" /></div>
+                                <div class="user-pic"><img src="{{asset('template/assets/images/users/2.jpeg')}}" alt="users" class="rounded-circle" width="40" /></div>
                                 <div class="user-content hide-menu ml-2">
                                     <a href="javascript:void(0)" class="" id="Userdd" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <h5 class="mb-0 user-name font-medium">{{auth()->user()->username}} </h5>
-                                        <span class="op-5 user-email">{{auth()->user()->email}}</span>
+                                        <h5 class="mb-0 user-name font-medium">{{auth()->user()->username ?? ''}} </h5>
+                                        <span class="op-5 user-email">{{auth()->user()->email ?? ''}}</span>
                                     </a>
                                 </div>
                             </div>

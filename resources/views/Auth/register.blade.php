@@ -27,7 +27,7 @@
             <div class="auth-box">
                 <div>
                     <div class="logo">
-                        <span class="db"><img src="{{asset('template/assets/images/users/1.png')}}" width="40%" alt="logo" /></span>
+                        <span class="db"><img src="{{asset('template/assets/images/users/2.jpeg')}}" width="40%" alt="logo" /></span>
                         <h5 class="font-medium m-b-20">Sign Up to Admin</h5>
                     </div>
                     <!-- Form -->

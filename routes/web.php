@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function(){
-    return view('layout.master');
+    return redirect()->route('login.view');
 });
 
 Route::get('/dashboard','UserController@dashboard')->name('dashboard');
