@@ -24,12 +24,14 @@ class CreateCaseFilesTable extends Migration
             $table->unsignedBigInteger('accused_id');
             $table->unsignedBigInteger('officer_in_charge');
             $table->unsignedBigInteger('state_id');
+            $table->unsignedBigInteger('station_id');
 
             $table->foreign('complainant_id')->references('id')->on('complainants');
             $table->foreign('victim_id')->references('id')->on('victims');
             $table->foreign('accused_id')->references('id')->on('accuseds');
             $table->foreign('officer_in_charge')->references('id')->on('officers');
             $table->foreign('state_id')->references('id')->on('states');
+            $table->foreign('station_id')->references('id')->on('stations');
             $table->timestamps();
             
         });

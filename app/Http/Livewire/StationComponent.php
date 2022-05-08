@@ -19,7 +19,7 @@ class StationComponent extends Component
     public function saveStation(){
         Station::saveStation($this->reference, $this->name, $this->state, $this->division, $this->address);
         $this->name = null; $this->division = null; $this->address = null;
-        session()->flash('message', 'Police Station Added Successfully');
+        session()->flash('message', 'Intelligence Station Added Successfully');
     }
 
 }

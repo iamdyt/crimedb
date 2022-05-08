@@ -37,7 +37,7 @@ class OfficerController extends Controller
     }
 
     public function showAll(){
-        $officers = Officer::whereStationId(auth()->user()->station_id);
+        $officers = Officer::whereStationId(auth()->user()->station_id)->get();
         return view('officer.all', compact('officers'));
     }
 

@@ -28,7 +28,7 @@
                     <!-- ============================================================== -->
                     <ul class="navbar-nav float-left mr-auto">
                         <li class="nav-item d-none d-md-block"><a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar"><i class="mdi text-dark mdi-menu font-24"></i></a></li>
-                        <p class="my-4">The Nigeria Police - Central Criminal Database</p>
+                        <p class="my-4">The Nigeria Intelligence - Central Criminal Database</p>
                         <li class="nav-item search-box"> <a class="nav-link waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
                             <form class="app-search position-absolute">
                                 <input type="text" class="form-control" placeholder="Search &amp; enter"> <a class="srh-btn"><i class="ti-close"></i></a>

@@ -9,7 +9,7 @@
         <div class="col-md-10 offset-md-1 ">
             <div class="card">
                 <div class="card-body">
-                    <p class="lead">New Police Officer Entry</p>
+                    <p class="lead">New Intelligence Officer Entry</p>
                     <hr>
                     <form method="POST" class="row" action="{{route('officer.store')}}" enctype="multipart/form-data">
                         {{csrf_field()}}

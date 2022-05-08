@@ -8,7 +8,7 @@
         <div class="col-12">
         <div class="card mx-4">
             <div class="card-body">
-                <h4 class="card-title">Nigeria Police -  All Officers</h4>
+                <h4 class="card-title">Nigeria Intelligence -  All Officers</h4>
                 <div class="table-responsive">
                     <table id="list_table" class="table table-striped table-bordered">
                         <thead>
